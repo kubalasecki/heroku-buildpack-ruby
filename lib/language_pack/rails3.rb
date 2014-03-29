@@ -86,13 +86,13 @@ private
     if user_env_hash.empty?
       default_env = {
         "RAILS_GROUPS" => ENV["RAILS_GROUPS"] || "assets",
-        "RAILS_ENV"    => ENV["RAILS_ENV"]    || "production",
+        "RAILS_ENV"    => ENV["RAILS_ENV"]    || "staging",
         "DATABASE_URL" => database_url
       }
     else
       default_env = {
         "RAILS_GROUPS" => "assets",
-        "RAILS_ENV"    => "production",
+        "RAILS_ENV"    => "staging",
         "DATABASE_URL" => database_url
       }
     end
